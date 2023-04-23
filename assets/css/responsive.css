@@ -1,0 +1,125 @@
+@media screen and (max-width:1024px) {
+    .top-banner{
+        height: auto;
+        padding: 30px 0;
+    }
+    h2{
+        font-size: 28px;
+    }
+    .tab-content h3{
+        font-size: 16px;
+    }
+    
+   .content .width-80 > .width-6,.content .width-80 > .width-8,.content .width-80 > .width-4,
+   .content .width-80 > .width-1,.content .width-80 > .width-2,.content .width-80 > .width-3,
+   .content .width-80 > .width-5,.content .width-80 > .width-7,.content .width-80 > .width-9,
+   .content .width-80 > .width-10,.content .width-80 > .width-11,.content .width-80 > .width-12
+   {
+        width: 100%;
+   }
+   .destop-menu{
+    display: none;
+    }
+    .mobile-menu{
+        display: flex;
+        flex-direction: column;
+        right:-1000px;
+        position: fixed;
+
+    }
+    .mobile-menu.open{
+        bottom: 0;
+        right: 0;
+        top: 62px;
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        transition: all 1s ease;
+        background: #000;
+        z-index: 3;
+        width: 100%;
+    
+    }
+    .mobile-menu.close{
+        right:-1000px
+    }
+    .mobile-menu li {
+        padding:30px 100px;
+        list-style: none;
+    }
+    .mobile-menu li a {
+        color:#fff;
+    }
+    .header .mobile-menu li:hover ,.header .mobile-menu li:hover a{
+        color: #fff !important;;
+        background-color: #ff8b38!important;
+    }
+    i.icon-mobile-menu.open:before{
+        content:"\f00d";
+    }
+    i.icon-mobile-menu{
+        display: block;
+        color: #fff;
+        font-size: 30px;
+    }
+   .banner-second-section .width-3{
+    display: none;
+   }
+   .banner-second-section .banner-form-section{
+    width: 70%;
+    margin: auto;
+   }
+   .banner-form-mobile{
+    display: block;
+    padding-bottom: 30px;
+}
+   .width-80.flex{
+    flex-wrap: wrap;
+   }
+   .normal-section{
+    padding:60px 0
+}
+    .tab-section{
+        padding: 80px 0;
+        gap:30px
+    }
+    
+    .sublist-container{
+        flex-direction: column-reverse;
+    }
+
+}
+@media screen and (max-width:768px) {
+    .width-80{
+        width: 90%;
+        margin: auto;
+    }
+    h2{
+        font-size:24px
+    }
+    h3{
+        font-size :14px;
+    }
+    p{
+        font-size:12px
+    }
+    .row{
+       flex-wrap: wrap; 
+    }
+    .width-4{
+        width: 100%;
+    }
+    
+   .banner-second-section .banner-form-section{
+    width: 100%;
+    margin: auto;
+   }
+    .tab-section-container{
+        flex-wrap: nowrap;
+    }
+    .contact-us-form .width-6{  
+        width: 100%;
+        gap:20px
+    }
+
+}
